@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import appleData from '../../assets/mobiles/Apple/apple.json';
-import ProductCard from '../../components/ProductCard/ProductCard';
-import './ApplePage.scss';
+
+
+import React, { useEffect, useState } from "react";
+import appleData from "../../assets/mobiles/Apple/apple.json";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./ApplePage.scss";
 
 const ApplePage = () => {
   const [products, setProducts] = useState([]);
@@ -11,16 +13,24 @@ const ApplePage = () => {
   }, []);
 
   return (
-    <div className="apple-page">
-      <h1>Apple Products</h1>
-      <div className="product-list">
+    <div className="container apple-page">
+      <h1 className="my-4">Apple Products</h1>
+      <div className="row">
         {products.map((product) => (
-          <ProductCard 
-            key={product.id}
-            image={require(`../../assets/mobiles/Apple/${product.image}`)}
-            name={product.name}
-            price={product.price}
-          />
+          <div key={product.id} className="col-lg-4 col-md-6 mb-4">
+            <div className="card h-100">
+              <img
+                className="card-img-top"
+                src={require(`../../assets/mobiles/Apple/${product.image}`)}
+                alt={product.name}
+              />
+              <div className="card-body">
+                <h4 className="card-title">{product.name}</h4>
+                <h5>{product.price}</h5>
+                <button className="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </div>

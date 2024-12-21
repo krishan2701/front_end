@@ -1,134 +1,23 @@
+/* src/components/Navbar/Navbar.scss */
 
+/* Ensure navbar is properly spaced from the content */
 .navbar {
-  background-color: #1a1a2e; /* Dark navy background */
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  margin-bottom: 50px; /* Adjust this value as needed */
 }
 
-.navbar__list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+/* Optional: Custom styling for navbar brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.navbar__item {
-  position: relative;
-  padding: 10px 20px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  text-transform: uppercase;
+/* Optional: Custom styling for dropdown items */
+.dropdown-item:hover {
+  background-color: #0056b3;
+  color: white;
 }
 
-.navbar__item a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Hover effect for navbar items */
-.navbar__item:hover {
-  background-color: #16213e;
-  color: #f1f1f1;
-}
-
-/* Dropdown styles */
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #16213e;
-  padding: 10px 0;
-  min-width: 180px;
-  border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(10px);
-}
-
-/* Show dropdown when hovering over item */
-.navbar__item:hover .dropdown {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Individual dropdown items */
-.dropdown__item {
-  padding: 10px 20px;
-  color: #f1f1f1;
-  font-size: 14px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown__item a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.dropdown__item:hover {
-  background-color: #1a3c68;
-}
-
-/* Active link styling */
-.navbar__item a.active {
-  border-bottom: 2px solid #f1f1f1;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
-  .navbar__item {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px;
-  }
-  .navbar__list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar__item {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-  }
-  .dropdown {
-    position: static;
-    min-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  .dropdown__item {
-    padding: 10px 0;
-    font-size: 14px;
-  }
-}
-
-/* Styles for the Home link */
-.navbar__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.navbar__link:hover {
+/* Handle hover effects for navbar items */
+.nav-link:hover {
   color: #ddd;
 }

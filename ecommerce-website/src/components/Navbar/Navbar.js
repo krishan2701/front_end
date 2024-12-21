@@ -1,9 +1,12 @@
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const categories = {
     Mobiles: ["Samsung", "Apple", "OnePlus"],
@@ -13,43 +16,63 @@ const Navbar = () => {
 
   const handleMouseEnter = (category) => setDropdown(category);
   const handleMouseLeave = () => setDropdown(null);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="navbar">
-      <ul className="navbar__list">
-        {/* Home Button */}
-        <li className="navbar__item">
-          <Link to="/" className="navbar__link">
-            Home
-          </Link>
-        </li>
-
-        {/* Category Links with Dropdown */}
-        {Object.keys(categories).map((category) => (
-          <li
-            key={category}
-            className="navbar__item"
-            onMouseEnter={() => handleMouseEnter(category)}
-            onMouseLeave={handleMouseLeave}
-          >
-            {category}
-            {dropdown === category && (
-              <ul className="dropdown">
-                {categories[category].map((brand) => (
-                  <li key={brand} className="dropdown__item">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          Home
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleMenu}
+          aria-controls="navbarNav"
+          aria-expanded={isOpen ? "true" : "false"}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            {Object.keys(categories).map((category) => (
+              <li
+                key={category}
+                className="nav-item dropdown"
+                onMouseEnter={() => handleMouseEnter(category)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id={`navbarDropdown-${category}`}
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {category}
+                </Link>
+                <div
+                  className={`dropdown-menu ${dropdown === category ? "show" : ""}`}
+                  aria-labelledby={`navbarDropdown-${category}`}
+                >
+                  {categories[category].map((brand) => (
                     <Link
+                      key={brand}
+                      className="dropdown-item"
                       to={`/${category.toLowerCase()}/${brand.toLowerCase()}`}
-                      className="dropdown__link"
                     >
                       {brand}
                     </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };

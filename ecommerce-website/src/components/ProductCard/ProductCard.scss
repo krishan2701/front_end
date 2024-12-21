@@ -1,4 +1,4 @@
-// /* src/components/ProductCard/ProductCard.scss */
+
 
 // .product-card {
 //     border: 1px solid #ddd;
@@ -7,10 +7,19 @@
 //     text-align: center;
 //     margin: 16px;
 //     max-width: 200px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.2s, box-shadow 0.2s;
+  
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//     }
   
 //     img {
 //       width: 100%;
-//       height: auto;
+//       height: 150px; /* Set a fixed height for consistency */
+//       object-fit: cover; /* Ensure the image is properly contained */
+//       margin-bottom: 10px;
 //     }
   
 //     h2 {
@@ -37,7 +46,15 @@
 //     }
 //   }
   
+//   /* Media queries for smaller screens */
+//   @media (max-width: 768px) {
+//     .product-card {
+//       max-width: 90%; /* Adjust to fit the screen better on mobile */
+//     }
+//   }
+  
 
+/* src/components/ProductCard/ProductCard.scss */
 /* src/components/ProductCard/ProductCard.scss */
 
 .product-card {
