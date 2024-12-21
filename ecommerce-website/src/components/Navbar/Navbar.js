@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -12,6 +13,12 @@ const Navbar = () => {
 
   const handleMouseEnter = (category) => setDropdown(category);
   const handleMouseLeave = () => setDropdown(null);
+
+  const createRoute = (category, brand) => {
+    const basePath = category.toLowerCase();
+    const brandPath = brand.toLowerCase().replace(/\s+/g, "-");
+    return `/${basePath}/${brandPath}`;
+  };
 
   return (
     <nav className="navbar">
@@ -28,7 +35,7 @@ const Navbar = () => {
               <ul className="dropdown">
                 {categories[category].map((brand) => (
                   <li key={brand} className="dropdown__item">
-                    {brand}
+                    <Link to={createRoute(category, brand)}>{brand}</Link>
                   </li>
                 ))}
               </ul>
