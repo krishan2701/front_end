@@ -1,8 +1,12 @@
-/* General navbar styles */
+
 .navbar {
-  background-color: #333;
+  background-color: #1a1a2e; /* Dark navy background */
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar__list {
@@ -21,12 +25,18 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Hover effect for navbar items */
 .navbar__item:hover {
-  background-color: #444;
-  color: #fff;
+  background-color: #16213e;
+  color: #f1f1f1;
 }
 
 /* Dropdown styles */
@@ -35,54 +45,90 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #444;
+  background-color: #16213e;
   padding: 10px 0;
   min-width: 180px;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
 }
 
 /* Show dropdown when hovering over item */
 .navbar__item:hover .dropdown {
   display: block;
   opacity: 1;
+  transform: translateY(0);
 }
 
 /* Individual dropdown items */
 .dropdown__item {
   padding: 10px 20px;
-  color: #fff;
+  color: #f1f1f1;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect for dropdown items */
-.dropdown__item:hover {
-  background-color: #555;
+.dropdown__item a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Media query for responsive design */
+.dropdown__item:hover {
+  background-color: #1a3c68;
+}
+
+/* Active link styling */
+.navbar__item a.active {
+  border-bottom: 2px solid #f1f1f1;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .navbar__item {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
   .navbar__list {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar__item {
-    padding: 12px 15px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
   }
-
   .dropdown {
-    position: relative;
+    position: static;
     min-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
   }
-
   .dropdown__item {
-    font-size: 16px;
+    padding: 10px 0;
+    font-size: 14px;
   }
+}
+
+/* Styles for the Home link */
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #ddd;
 }

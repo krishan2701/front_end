@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -14,15 +14,17 @@ const Navbar = () => {
   const handleMouseEnter = (category) => setDropdown(category);
   const handleMouseLeave = () => setDropdown(null);
 
-  const createRoute = (category, brand) => {
-    const basePath = category.toLowerCase();
-    const brandPath = brand.toLowerCase().replace(/\s+/g, "-");
-    return `/${basePath}/${brandPath}`;
-  };
-
   return (
     <nav className="navbar">
       <ul className="navbar__list">
+        {/* Home Button */}
+        <li className="navbar__item">
+          <Link to="/" className="navbar__link">
+            Home
+          </Link>
+        </li>
+
+        {/* Category Links with Dropdown */}
         {Object.keys(categories).map((category) => (
           <li
             key={category}
@@ -35,7 +37,12 @@ const Navbar = () => {
               <ul className="dropdown">
                 {categories[category].map((brand) => (
                   <li key={brand} className="dropdown__item">
-                    <Link to={createRoute(category, brand)}>{brand}</Link>
+                    <Link
+                      to={`/${category.toLowerCase()}/${brand.toLowerCase()}`}
+                      className="dropdown__link"
+                    >
+                      {brand}
+                    </Link>
                   </li>
                 ))}
               </ul>
