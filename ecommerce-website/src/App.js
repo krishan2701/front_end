@@ -1,7 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ApplePage from "./pages/Mobiles/ApplePage"; // Import the ApplePage component
+import ApplePage from "./pages/Mobiles/ApplePage";
+import SamsungPage from "./pages/Mobiles/SamsungPage";
+import OnePlusPage from "./pages/Mobiles/OnePlusPage";
+import DellPage from "./pages/Laptops/DellPage";
+import HPPage from "./pages/Laptops/HPPage";
+import LenovoPage from "./pages/Laptops/LenovoPage";
+import SonyPage from "./pages/Televisions/SonyPage";
+import LGPage from "./pages/Televisions/LGPage";
+import SamsungTVPage from "./pages/Televisions/SamsungTVPage";
 import "./App.scss";
 
 const App = () => {
@@ -10,21 +18,16 @@ const App = () => {
       <Navbar />
       <div className="page-container">
         <Routes>
-          {/* Home Page Route */}
           <Route path="/" element={<h1>Welcome to the Home Page</h1>} />
-          
-          {/* Apple Mobiles Route */}
           <Route path="/mobiles/apple" element={<ApplePage />} />
-          
-          {/* Other Routes */}
-          <Route path="/mobiles/samsung" element={<h1>This is Samsung page</h1>} />
-          <Route path="/mobiles/oneplus" element={<h1>This is OnePlus page</h1>} />
-          <Route path="/laptops/dell" element={<h1>This is Dell page</h1>} />
-          <Route path="/laptops/hp" element={<h1>This is HP page</h1>} />
-          <Route path="/laptops/lenovo" element={<h1>This is Lenovo page</h1>} />
-          <Route path="/televisions/sony" element={<h1>This is Sony page</h1>} />
-          <Route path="/televisions/lg" element={<h1>This is LG page</h1>} />
-          <Route path="/televisions/samsung" element={<h1>This is Samsung page</h1>} />
+          <Route path="/mobiles/samsung" element={<SamsungPage />} />
+          <Route path="/mobiles/oneplus" element={<OnePlusPage />} />
+          <Route path="/laptops/dell" element={<DellPage />} />
+          <Route path="/laptops/hp" element={<HPPage />} />
+          <Route path="/laptops/lenovo" element={<LenovoPage />} />
+          <Route path="/televisions/sony" element={<SonyPage />} />
+          <Route path="/televisions/lg" element={<LGPage />} />
+          <Route path="/televisions/samsung" element={<SamsungTVPage />} />
         </Routes>
       </div>
     </Router>

@@ -6,16 +6,23 @@
     "image": "iphone11.jpg"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "iPhone 13",
     "price": "$899",
     "image": "iphone13.jpg"
   },
 
   {
-    "id": 4,
+    "id": 3,
     "name": "iPhone 16 Pro",
     "price": "$1000",
     "image": "iphone16Pro.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "iPhone 12",
+    "price": "$1000",
+    "image": "iphone12.jpg"
   }
 ]

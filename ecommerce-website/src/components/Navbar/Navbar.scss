@@ -1,6 +1,3 @@
-/* src/components/Navbar/Navbar.scss */
-
-/* Ensure navbar is properly spaced from the content */
 .navbar {
   margin-bottom: 50px; /* Adjust this value as needed */
 }
@@ -12,12 +9,76 @@
 }
 
 /* Optional: Custom styling for dropdown items */
-.dropdown-item:hover {
-  background-color: #0056b3;
+.dropdown-item {
+  background-color: #0056b3; /* Change this color as needed */
   color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #004494; /* Slightly darker shade for hover effect */
 }
 
 /* Handle hover effects for navbar items */
 .nav-link:hover {
   color: #ddd;
 }
+
+/* Ensure dropdown menu is visible */
+.navbar-collapse {
+  background-color: #333; /* Change this color to suit your design */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white; /* Change this color to suit your design */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ddd; /* Slightly lighter shade for hover effect */
+}
+
+
+// // Ensure navbar is properly spaced from the content
+// // Ensure navbar is properly spaced from the content
+// .navbar {
+//   margin-bottom: 50px; // Adjust this value as needed
+//   background-color: #343a40; // Bootstrap dark background
+//   padding: 0.5rem 1rem;
+// }
+
+// // Custom styling for navbar brand
+// .navbar-brand {
+//   font-size: 1.75rem;
+//   font-weight: bold;
+//   color: #fff; // Ensure the brand is visible
+// }
+
+// // Custom styling for navbar links
+// .nav-link {
+//   color: #ddd; // Default link color
+//   &:hover {
+//     color: #fff; // Hover color
+//   }
+// }
+
+// // Custom styling for dropdown menu
+// .navbar-nav .dropdown-menu {
+//   background-color: #343a40; // Match the navbar background
+//   color: #ddd; // Default dropdown text color
+// }
+
+// // Custom styling for dropdown items
+// .dropdown-item {
+//   color: #ddd; // Default dropdown item color
+//   &:hover {
+//     background-color: #0056b3; // Hover background color
+//     color: #fff; // Hover text color
+//   }
+// }
+
+// // Ensure dropdown items are visible on smaller screens
+// @media (max-width: 992px) {
+//   .navbar-collapse {
+//     background-color: #343a40; // Mobile dropdown background
+//   }
+// }
+
