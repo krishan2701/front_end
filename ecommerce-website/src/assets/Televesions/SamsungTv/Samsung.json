@@ -1,27 +1,34 @@
 [
-    {
-      "id": 1,
-      "name": "Samsung QLED Q60T",
-      "price": "$1299",
-      "image": "Samsung1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Samsung Crystal UHD",
-      "price": "$899",
-      "image": "Samsung2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Samsung The Frame",
-      "price": "$1499",
-      "image": "Samsung3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Samsung TU8000",
-      "price": "$799",
-      "image": "Samsung4.jpg"
-    }
-  ]
-  
+  {
+    "id": 29,
+    "name": "Samsung QLED 55",
+    "price": "$1299",
+    "category": "Televesions",
+    "brand": "SamsungTv",
+    "image": "Samsung1.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Samsung Crystal UHD",
+    "price": "$999",
+    "category": "Televesions",
+    "brand": "SamsungTv",
+    "image": "Samsung2.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Samsung The Frame",
+    "price": "$1599",
+    "category": "Televesions",
+    "brand": "SamsungTv",
+    "image": "Samsung3.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Samsung Serif",
+    "price": "$1199",
+    "category": "Televesions",
+    "brand": "SamsungTv",
+    "image": "Samsung4.jpg"
+  }
+]

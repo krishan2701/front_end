@@ -1,27 +1,34 @@
 [
-    {
-      "id": 1,
-      "name": "LG OLED CX",
-      "price": "$1799",
-      "image": "LG1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "LG NanoCell 85",
-      "price": "$1299",
-      "image": "LG2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "LG UHD UN7300",
-      "price": "$899",
-      "image": "LG3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "LG UHD UN8500",
-      "price": "$999",
-      "image": "LG4.jpg"
-    }
-  ]
-  
+  {
+    "id": 25,
+    "name": "LG OLED55",
+    "price": "$1199",
+    "category": "Televisions",
+    "brand": "LG",
+    "image": "LG1.jpg"
+  },
+  {
+    "id": 26,
+    "name": "LG QNED85",
+    "price": "$1399",
+    "category": "Televesions",
+    "brand": "LG",
+    "image": "LG2.jpg"
+  },
+  {
+    "id": 27,
+    "name": "LG NanoCell",
+    "price": "$999",
+    "category": "Televesions",
+    "brand": "LG",
+    "image": "LG3.jpg"
+  },
+  {
+    "id": 28,
+    "name": "LG UHD 75",
+    "price": "$1599",
+    "category": "Televesions",
+    "brand": "LG",
+    "image": "LG4.jpg"
+  }
+]

@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { useCart } from '../../contexts/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,11 +7,11 @@ import './CartPage.scss';
 const CartPage = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } = useCart();
 
-  const getImagePath = (brand, imageName) => {
+  const getImagePath = (category, brand, imageName) => {
     try {
-      return require(`../../assets/mobiles/${brand}/${imageName}`);
+      return require(`../../assets/${category}/${brand}/${imageName}`);
     } catch (error) {
-      console.error(`Cannot find image: ${brand}/${imageName}`);
+      console.error(`Cannot find image: ${category}/${brand}/${imageName}`);
       return null; // Fallback in case image not found
     }
   };
@@ -27,7 +26,7 @@ const CartPage = () => {
           {cartItems.map(item => (
             <div className="cart-item card mb-4" key={item.id}>
               <img 
-                src={getImagePath(item.brand, item.image)} 
+                src={getImagePath(item.category, item.brand, item.image)} 
                 className="card-img-top" 
                 alt={item.name} 
               />

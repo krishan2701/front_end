@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import oneplusData from "../../assets/mobiles/OnePlus/onePlus.json";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,11 +13,11 @@ const OnePlusPage = () => {
     setProducts(oneplusData);
   }, []);
 
-  const getImagePath = (brand, imageName) => {
+  const getImagePath = (category, brand, imageName) => {
     try {
-      return require(`../../assets/mobiles/${brand}/${imageName}`);
+      return require(`../../assets/${category}/${brand}/${imageName}`);
     } catch (error) {
-      console.error(`Cannot find image: ${brand}/${imageName}`);
+      console.error(`Cannot find image: ${category}/${brand}/${imageName}`);
       return null; // Fallback in case image not found
     }
   };
@@ -30,7 +31,7 @@ const OnePlusPage = () => {
             <div className="card h-100">
               <img
                 className="card-img-top"
-                src={getImagePath("OnePlus", product.image)}
+                src={getImagePath(product.category, product.brand, product.image)}
                 alt={product.name}
               />
               <div className="card-body">

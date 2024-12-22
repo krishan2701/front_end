@@ -3,6 +3,7 @@
     "id": 5,
     "name": "OnePlus 7",
     "price": "$599",
+    "category": "mobiles",
     "brand": "OnePlus",
     "image": "onePlus7.jpg"
   },
@@ -10,6 +11,7 @@
     "id": 6,
     "name": "OnePlus 9",
     "price": "$729",
+    "category": "mobiles",
     "brand": "OnePlus",
     "image": "onePlus9.jpg"
   },
@@ -17,6 +19,7 @@
     "id": 7,
     "name": "OnePlus 11",
     "price": "$799",
+    "category": "mobiles",
     "brand": "OnePlus",
     "image": "onePlus11.jpg"
   },
@@ -24,6 +27,7 @@
     "id": 8,
     "name": "OnePlus Nord",
     "price": "$499",
+    "category": "mobiles",
     "brand": "OnePlus",
     "image": "onePlusNord.jpg"
   }

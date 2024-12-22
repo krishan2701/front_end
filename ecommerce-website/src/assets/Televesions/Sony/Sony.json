@@ -1,27 +1,34 @@
 [
-    {
-      "id": 1,
-      "name": "Sony Bravia X900H",
-      "price": "$1399",
-      "image": "sony1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Sony OLED A8H",
-      "price": "$1799",
-      "image": "sony2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Sony Bravia X950H",
-      "price": "$1599",
-      "image": "sony3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Sony Bravia X800H",
-      "price": "$999",
-      "image": "sony4.jpg"
-    }
-  ]
-  
+  {
+    "id": 33,
+    "name": "Sony Bravia 55",
+    "price": "$1399",
+    "category": "Televisions",
+    "brand": "Sony",
+    "image": "sony1.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Sony X80J",
+    "price": "$1099",
+    "category": "Televesions",
+    "brand": "Sony",
+    "image": "sony2.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Sony A8H",
+    "price": "$1599",
+    "category": "Televesions",
+    "brand": "Sony",
+    "image": "sony3.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Sony Master Series",
+    "price": "$1999",
+    "category": "Televesions",
+    "brand": "Sony",
+    "image": "sony4.jpg"
+  }
+]

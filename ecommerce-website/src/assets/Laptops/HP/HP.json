@@ -1,27 +1,34 @@
 [
-    {
-      "id": 1,
-      "name": "HP Spectre x360",
-      "price": "$1099",
-      "image": "HPSpectrex360.jpg"
-    },
-    {
-      "id": 2,
-      "name": "HP Envy 13",
-      "price": "$999",
-      "image": "HPEnvy13.jpg"
-    },
-    {
-      "id": 3,
-      "name": "HP Pavilion 14",
-      "price": "$799",
-      "image": "HPPavilion14.jpg"
-    },
-    {
-      "id": 4,
-      "name": "HP Omen 15",
-      "price": "$1299",
-      "image": "HPOmen15.jpg"
-    }
-  ]
-  
+  {
+    "id": 17,
+    "name": "HP Spectre x360",
+    "price": "$1099",
+    "category": "Laptops",
+    "brand": "HP",
+    "image": "Hp1.jpg"
+  },
+  {
+    "id": 18,
+    "name": "HP Envy 13",
+    "price": "$999",
+    "category": "Laptops",
+    "brand": "HP",
+    "image": "HP12.jpg"
+  },
+  {
+    "id": 19,
+    "name": "HP Pavilion 14",
+    "price": "$799",
+    "category": "Laptops",
+    "brand": "HP",
+    "image": "Hp14.jpg"
+  },
+  {
+    "id": 20,
+    "name": "HP Omen 15",
+    "price": "$1299",
+    "category": "Laptops",
+    "brand": "HP",
+    "image": "Hp15.jpg"
+  }
+]
