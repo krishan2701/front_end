@@ -1,12 +1,15 @@
 
+// src/components/Navbar/Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.scss";
+import { useCart } from "../../contexts/CartContext";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const { cartItems } = useCart();
 
   const categories = {
     Mobiles: ["Samsung", "Apple", "OnePlus"],
@@ -21,9 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Home
-        </Link>
+        <Link className="navbar-brand" to="/">Home</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -50,7 +51,7 @@ const Navbar = () => {
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
-                  aria-expanded="false"
+                  aria-expanded={dropdown === category ? "true" : "false"}
                 >
                   {category}
                 </Link>
@@ -70,6 +71,11 @@ const Navbar = () => {
                 </div>
               </li>
             ))}
+            <li className="nav-item">
+              <Link className="nav-link" to="/cart">
+                Cart ({cartItems.length})
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
