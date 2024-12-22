@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "LG OLED CX",
+      "price": "$1799",
+      "image": "LG1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "LG NanoCell 85",
+      "price": "$1299",
+      "image": "LG2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "LG UHD UN7300",
+      "price": "$899",
+      "image": "LG3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "LG UHD UN8500",
+      "price": "$999",
+      "image": "LG4.jpg"
+    }
+  ]
+  

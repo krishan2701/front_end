@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Lenovo IdeaPad",
+      "price": "$699",
+      "image": "LenovoIdeaPad.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Lenovo ThinkPad",
+      "price": "$1299",
+      "image": "LenovoThinkPad.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lenovo Slim Pad",
+      "price": "$799",
+      "image": "LenovoSlimPad.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lenovo Legion",
+      "price": "$1499",
+      "image": "LenovoLegion.jpg"
+    }
+  ]
+  

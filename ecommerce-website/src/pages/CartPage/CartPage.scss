@@ -1,90 +1,4 @@
 
-// // src/pages/CartPage/CartPage.scss
-// .cart-page {
-//     padding-top: 80px; /* Ensures it clears the navbar */
-//     text-align: center;
-//   }
-  
-//   .cart-items {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 20px;
-//   }
-  
-//   .cart-item {
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//     max-width: 900px; /* Increase the max-width if needed */
-//     background-color: #f8f9fa;
-//     border: 1px solid #dee2e6;
-//     border-radius: 10px;
-//     padding: 15px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-//   }
-  
-//   .cart-item img {
-//     max-width: 200px; /* Adjust the max-width for a larger image */
-//     height: auto;
-//     margin-right: 20px;
-//     border-radius: 10px;
-//   }
-  
-//   .item-details {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//   }
-  
-//   .card-title {
-//     font-size: 1.25rem;
-//     margin-bottom: 10px;
-//   }
-  
-//   .card-body .price-green {
-//     margin-bottom: 10px;
-//   }
-  
-//   .quantity-controls {
-//     display: flex;
-//     align-items: center;
-//     margin-top: 10px;
-  
-//     button {
-//       background-color: #007bff;
-//       border: none;
-//       color: white;
-//       padding: 5px 10px;
-//       margin: 0 5px;
-//       cursor: pointer;
-//       border-radius: 5px;
-  
-//       &:hover {
-//         background-color: #0056b3;
-//       }
-//     }
-  
-//     span {
-//       font-size: 1em;
-//       margin: 0 5px;
-//     }
-//   }
-  
-//   .btn-danger {
-//     margin-top: 10px;
-//     background-color: #dc3545;
-//     border: none;
-//     padding: 5px 10px;
-//     cursor: pointer;
-//     border-radius: 5px;
-  
-//     &:hover {
-//       background-color: #c82333;
-//     }
-//   }
-  
-
 // src/pages/CartPage/CartPage.scss
 .cart-page {
     padding-top: 80px; /* Ensures it clears the navbar */
@@ -121,7 +35,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 1; /* Allow it to take available space */
   }
   
   .card-title {
@@ -131,13 +44,6 @@
   
   .card-body .price-green {
     margin-bottom: 10px;
-  }
-  
-  .controls-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
   }
   
   .quantity-controls {

@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Dell Inspiron",
+      "price": "$599",
+      "image": "DellInspiron.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS",
+      "price": "$1299",
+      "image": "DellXps.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dell XPS 13",
+      "price": "$1399",
+      "image": "DellXps13.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS 15",
+      "price": "$1499",
+      "image": "DellXps15.jpg"
+    }
+  ]
+  

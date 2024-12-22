@@ -1,0 +1,30 @@
+[
+  {
+    "id": 9,
+    "name": "Samsung S20",
+    "price": "$999",
+    "brand": "Samsung",
+    "image": "Samsungs20.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Samsung S21",
+    "price": "$1099",
+    "brand": "Samsung",
+    "image": "Samsungs21.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Samsung S23 Plus",
+    "price": "$1199",
+    "brand": "Samsung",
+    "image": "Samsungs23Plus.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Samsung S23 Ultra",
+    "price": "$1199",
+    "brand": "Samsung",
+    "image": "SamsungS23Ultra.jpg"
+  }
+]

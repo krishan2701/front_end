@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Samsung QLED Q60T",
+      "price": "$1299",
+      "image": "Samsung1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Crystal UHD",
+      "price": "$899",
+      "image": "Samsung2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Samsung The Frame",
+      "price": "$1499",
+      "image": "Samsung3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Samsung TU8000",
+      "price": "$799",
+      "image": "Samsung4.jpg"
+    }
+  ]
+  
