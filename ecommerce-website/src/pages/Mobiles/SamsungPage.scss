@@ -1,14 +1,22 @@
+/* Ensure all images have the same size */
+img {
+  width: 150px;  /* Set the desired width */
+  height: 150px; /* Set the desired height */
+  object-fit: contain; /* Ensures the image fits within the set dimensions without cropping */
+  background-color: #f4f4f4; /* Add a background color to fill any empty space */
+}
+
+/* Page Specific Styles */
 .samsung-page {
-    padding-top: 80px; /* Ensures it clears the navbar */
-  }
-  
-  .card-body h4 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-  }
-  
-  .card-body h5 {
-    font-size: 1em;
-    margin: 0.5em 0;
-  }
-  
+  padding-top: 80px; /* Ensures it clears the navbar */
+}
+
+.card-body h4 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.card-body h5 {
+  font-size: 1em;
+  margin: 0.5em 0;
+}

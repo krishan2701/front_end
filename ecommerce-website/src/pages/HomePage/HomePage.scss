@@ -1,57 +1,51 @@
-// HomePage.scss
+
 .home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-color: #f4f4f4;
-  color: #333;
+  padding-top: 80px; /* Ensures it clears the navbar */
 
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 20px;
   }
 
   p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.2em;
+    margin-bottom: 40px;
   }
 
   .categories {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: space-around;
+  }
 
-    .category-link {
-      text-decoration: none;
-      color: inherit;
+  .category-link {
+    text-decoration: none;
+    margin: 20px;
+  }
 
-      .category-card {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .category-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: box-shadow 0.3s;
 
-        &:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        h2 {
-          font-size: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-        img {
-          width: 150px;
-          height: auto;
-          margin-bottom: 1.5rem;
-        }
-      }
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain; /* Ensures the image fits within the set dimensions without cropping */
+      background-color: #f4f4f4; /* Adds a background color to fill any empty space */
     }
   }
 }
