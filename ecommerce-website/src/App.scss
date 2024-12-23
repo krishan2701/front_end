@@ -1,50 +1,147 @@
+// /* Import Bootstrap */
+// @import "~bootstrap/scss/bootstrap";
+
+// /* Custom Styles */
+// body {
+//     padding-top: 80px; /* Height of the navbar */
+// }
+
+// /* Navbar Styles */
+// .navbar {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 1000;
+// }
+
+// /* Page Specific Styles */
+// .apple-page {
+//     padding-top: 80px; /* Ensures it clears the navbar */
+// }
+
+// .card-body h4 {
+//     font-size: 1.2em;
+//     margin: 0.5em 0;
+// }
+
+// .card-body h5 {
+//     font-size: 1em;
+//     margin: 0.5em 0;
+// }
+
+// /* Ensure images have some margin */
+// .card-img-top {
+//     margin-top: 20px; /* Adjust this value as needed */
+// }
+
+// /* Media Queries for Responsive Design */
+// @media (max-width: 768px) {
+//     .navbar {
+//         height: 70px; /* Adjust this value as needed */
+//     }
+    
+//     body {
+//         padding-top: 70px; /* Height of the navbar */
+//     }
+    
+//     .apple-page {
+//         padding-top: 70px; /* Ensures it clears the navbar */
+//     }
+// }
+
 /* Import Bootstrap */
 @import "~bootstrap/scss/bootstrap";
 
 /* Custom Styles */
-body {
-    padding-top: 80px; /* Height of the navbar */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container {
+  flex: 1;
 }
 
 /* Navbar Styles */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Page Specific Styles */
 .apple-page {
-    padding-top: 80px; /* Ensures it clears the navbar */
+  padding-top: 80px; /* Ensures it clears the navbar */
 }
 
 .card-body h4 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
+  font-size: 1.2em;
+  margin: 0.5em 0;
 }
 
 .card-body h5 {
-    font-size: 1em;
-    margin: 0.5em 0;
+  font-size: 1em;
+  margin: 0.5em 0;
 }
 
 /* Ensure images have some margin */
 .card-img-top {
-    margin-top: 20px; /* Adjust this value as needed */
+  margin-top: 20px; /* Adjust this value as needed */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .navbar {
-        height: 70px; /* Adjust this value as needed */
+  .navbar {
+    height: 70px; /* Adjust this value as needed */
+  }
+
+  body {
+    padding-top: 70px; /* Height of the navbar */
+  }
+
+  .apple-page {
+    padding-top: 70px; /* Ensures it clears the navbar */
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Ensures the footer spans the full width */
+  position: relative;
+  bottom: 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Centers the content within the footer */
+    margin: 0 auto; /* Centers the container */
+  }
+
+  p {
+    margin: 5px 0;
+
+    a {
+      color: #007bff;
+      margin: 0 5px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    
-    body {
-        padding-top: 70px; /* Height of the navbar */
-    }
-    
-    .apple-page {
-        padding-top: 70px; /* Ensures it clears the navbar */
-    }
+  }
 }

@@ -1,21 +1,101 @@
 
+
+// .home-page {
+//   padding-top: 80px; /* Ensures it clears the navbar */
+//   background: linear-gradient(to bottom, #f9f9f9, #e9e9e9); /* Adds a subtle gradient background */
+//   color: #333; /* Sets a consistent text color for readability */
+
+//   h1 {
+//     font-size: 2.5em;
+//     margin-bottom: 20px;
+//     text-align: center;
+//     color: #2c3e50; /* A deep, modern color for headings */
+//   }
+
+//   p {
+//     font-size: 1.2em;
+//     margin-bottom: 40px;
+//     text-align: center;
+//     color: #7f8c8d; /* A softer gray for the description */
+//   }
+
+//   .categories {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     gap: 30px; /* Adds consistent spacing between items */
+//     padding: 20px; /* Adds padding around the categories */
+//   }
+
+//   .category-link {
+//     text-decoration: none;
+//     margin: 20px;
+//   }
+
+//   .category-card {
+//     border: 1px solid #ddd;
+//     border-radius: 12px; /* Slightly rounder corners for a modern feel */
+//     padding: 20px;
+//     width: 280px;
+//     text-align: center;
+//     background: #fff; /* Clean white card background */
+//     transition: box-shadow 0.3s, transform 0.3s; /* Adds smooth hover animations */
+
+//     &:hover {
+//       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhances the shadow for depth */
+//       transform: translateY(-5px); /* Slight lift on hover */
+//     }
+
+//     h2 {
+//       font-size: 1.8em;
+//       margin-bottom: 15px;
+//       color: #34495e; /* A bold color for card titles */
+//     }
+
+//     img {
+//       width: 150px;
+//       height: 150px;
+//       object-fit: contain; /* Ensures the image fits within the set dimensions without cropping */
+//       background-color: #f4f4f4; /* Adds a background color to fill any empty space */
+//       border-radius: 50%; /* Makes the image circular for a polished look */
+//       margin-bottom: 15px; /* Adds space between the image and the title */
+//       transition: transform 0.3s; /* Adds a slight zoom effect */
+//     }
+
+//     img:hover {
+//       transform: scale(1.1); /* Zooms in the image slightly on hover */
+//     }
+//   }
+// }
+
+
 .home-page {
   padding-top: 80px; /* Ensures it clears the navbar */
+  background: linear-gradient(to bottom, #f9f9f9, #e9e9e9); /* Adds a subtle gradient background */
+  color: #333; /* Sets a consistent text color for readability */
 
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50; /* A deep, modern color for headings */
+    font-family: 'Roboto', sans-serif; /* Modern font */
   }
 
   p {
     font-size: 1.2em;
     margin-bottom: 40px;
+    text-align: center;
+    color: #7f8c8d; /* A softer gray for the description */
+    font-family: 'Roboto', sans-serif; /* Modern font */
   }
 
   .categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 30px; /* Adds consistent spacing between items */
+    padding: 20px; /* Adds padding around the categories */
   }
 
   .category-link {
@@ -25,20 +105,23 @@
 
   .category-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px; /* Slightly rounder corners for a modern feel */
     padding: 20px;
-    width: 250px;
+    width: 280px;
     text-align: center;
-    transition: box-shadow 0.3s;
+    background: #fff; /* Clean white card background */
+    transition: box-shadow 0.3s, transform 0.3s; /* Adds smooth hover animations */
 
     &:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhances the shadow for depth */
+      transform: translateY(-5px); /* Slight lift on hover */
     }
 
     h2 {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-      color: #333;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #34495e; /* A bold color for card titles */
+      font-family: 'Roboto', sans-serif; /* Modern font */
     }
 
     img {
@@ -46,6 +129,13 @@
       height: 150px;
       object-fit: contain; /* Ensures the image fits within the set dimensions without cropping */
       background-color: #f4f4f4; /* Adds a background color to fill any empty space */
+      border-radius: 50%; /* Makes the image circular for a polished look */
+      margin-bottom: 15px; /* Adds space between the image and the title */
+      transition: transform 0.3s; /* Adds a slight zoom effect */
+    }
+
+    img:hover {
+      transform: scale(1.1); /* Zooms in the image slightly on hover */
     }
   }
 }
